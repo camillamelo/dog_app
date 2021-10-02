@@ -1,0 +1,7 @@
+colorama
+Flask
+h5py
+keras
+numpy
+Pillow
+tensorflow

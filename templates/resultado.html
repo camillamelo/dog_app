@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<form action="{{ url_for('index') }}" method="post">
+  <figure class="thumb col-md-4">
+      <img class="img-responsive" src="{{ url_for('imagem', nome_arquivo=foto_atual) }}">
+  </figure>
+  <fieldset>
+    <div class="form-group">
+      <label for="texto">Resultado</label><br>
+      {{ texto }}
+    </div>
+    <div class="form-group">
+      <label for="classe">Raça</label><br>
+      {{ classe }}
+    </div>
+    <div class="form-group">
+      <label for="porcentagem">Confiança</label><br>
+      {{ porcentagem }}%
+    </div>
+    <div class="form-group">
+      <label for="outros">Outras opções:</label><br>
+      {{ outros[0] }}% <br>
+      {{ outros[1] }}% <br>
+      {{ outros[2] }}% <br>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary btn-salvar">Nova avaliação</button>
+  </fieldset>
+</form>
+{% endblock %}

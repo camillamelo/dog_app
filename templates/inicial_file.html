@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<form action="{{ url_for('analisar') }}" method="post" enctype="multipart/form-data">
+    Selecione um arquivo com foto de cachorro e iremos dizer qual a raça:
+    <br><br>
+    <input type="file" name="arquivo" accept=".jpg">
+    <br>
+    <fieldset>
+      <button type="submit" class="btn btn-primary btn-salvar">Analisar</button>
+    </fieldset>
+  </form>
+{% endblock %}

@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/5a71176f-afe5-4f38-96c1-b97efdd85218/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/doguineos"
+}
