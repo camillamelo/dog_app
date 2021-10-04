@@ -1,7 +1,6 @@
 colorama
 Flask
 gunicorn
-h5py
 keras
 numpy
 Pillow
